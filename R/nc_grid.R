@@ -21,6 +21,8 @@ nc_grids <- function(x, ...) UseMethod("nc_grids")
 #' @name nc_grids
 #' @export
 nc_grids.character <- function(x, ...) {
+  if (nchar(x) < 1) stop("NetCDF source cannot be empty string")
+  
   nc <- RNetCDF::open.nc(x)
   on.exit(RNetCDF::close.nc(nc), add  = TRUE)
   nc_grids_dimvar(nc_dims(nc), nc_vars(nc), nc_axes(nc))
@@ -44,7 +46,8 @@ nc_grids.NetCDF <- function(x, ...) {
 #' @importFrom dplyr desc arrange
 #' @importFrom rlang .data
 nc_grids_dimvar <- function(dimension, variable, axes) {
-  if (nrow(variable) < 1 & nrow(dimension) < 1) return(tibble::tibble())
+  
+  if (is.null(variable) || (nrow(variable) < 1 & nrow(dimension) < 1)) return(tibble::tibble())
   shape_instances_byvar <- split(axes$dimension, axes$variable)
 #    axes %>% 
  #   split_fast_tibble(.$variable) %>% purrr::map(function(xa) xa$dimension)

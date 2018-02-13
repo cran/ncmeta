@@ -1,3 +1,10 @@
+# ncmeta 0.0.2
+
+* added some extra checks for bad source strings, particularly the empty string
+ to prevent crashing (this happens with `system.file()` where the file does not
+ exist)
+* fix attribute types problem
+
 # ncmeta 0.0.1
 
 *updates from CRAN feedback

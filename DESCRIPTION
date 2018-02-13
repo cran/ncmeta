@@ -1,6 +1,6 @@
 Package: ncmeta
 Title: Straightforward 'NetCDF' Metadata
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre")), 
              person("Tomas", "Remenyi", role = "ctb"), 
              person("Ben", "Raymond", role = "ctb"))
@@ -10,7 +10,7 @@ Description: Extract metadata from 'NetCDF' data sources, these can be files, fi
  of 'grid', 'axis' and 'source' which are all meaningful entities without formal definition in the 
  'NetCDF' library <https://www.unidata.ucar.edu/software/netcdf/>. 'RNetCDF' matches the library 
  itself with only the named concepts of 'variables', 'dimensions' and 'attributes'. 'ncmeta'
- provides a required framework for the in-development 'tidync' project <https://github.com/hypertidy/ncmeta>.
+ provides a required framework for the in-development 'tidync' project <https://github.com/hypertidy/tidync>.
 Depends: R (>= 3.3.0)
 License: GPL-3
 Encoding: UTF-8
@@ -22,10 +22,10 @@ URL: https://github.com/hypertidy/ncmeta
 BugReports: https://github.com/hypertidy/ncmeta/issues
 ByteCompile: TRUE
 NeedsCompilation: no
-Packaged: 2017-12-01 12:24:36 UTC; mdsumner
+Packaged: 2018-02-13 09:48:49 UTC; mdsumner
 Author: Michael Sumner [aut, cre],
   Tomas Remenyi [ctb],
   Ben Raymond [ctb]
 Maintainer: Michael Sumner <mdsumner@gmail.com>
 Repository: CRAN
-Date/Publication: 2017-12-01 18:16:57 UTC
+Date/Publication: 2018-02-13 09:55:33 UTC
