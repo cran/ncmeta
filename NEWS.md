@@ -1,3 +1,9 @@
+# ncmeta 0.0.3
+
+* Fix for grid organization providing variables out of native order. 
+
+* Added 'variable' argument to 'nc_atts', per #8. 
+
 # ncmeta 0.0.2
 
 * added some extra checks for bad source strings, particularly the empty string
