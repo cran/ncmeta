@@ -7,7 +7,8 @@ Status](http://badges.herokuapp.com/travis/hypertidy/ncmeta?branch=master&env=BU
 Status](https://ci.appveyor.com/api/projects/status/github/hypertidy/ncmeta?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/ncmeta)
 [![CRAN
 status](http://www.r-pkg.org/badges/version/ncmeta)](https://cran.r-project.org/package=ncmeta)
-![cranlogs](http://cranlogs.r-pkg.org./badges/ncmeta) [![Coverage
+[![](https://cranlogs.r-pkg.org/badges/ncmeta)](https://cran.r-project.org/package=ncmeta)
+[![Coverage
 Status](https://img.shields.io/codecov/c/github/hypertidy/ncmeta/master.svg)](https://codecov.io/github/hypertidy/ncmeta?branch=master)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -40,8 +41,8 @@ are meaningful and worth making explicit. Many NetCDF tools don’t
 explicitly present these concepts so grab hold of them with ncmeta\!
 
 A **grid** is an ordered set of dimensions, and the [Unidata
-site](https://www.unidata.ucar.edu/software/netcdf/netcdf/The-NetCDF-Data-Model.html#The-NetCDF-Data-Model)
-refers *informally* to this concept as **shape**.
+site](https://www.unidata.ucar.edu/software/netcdf/) refers *informally*
+to this concept as **shape**.
 
 An **axis** is an *instance* of a dimension, the use of that dimension
 within a particular variable.
