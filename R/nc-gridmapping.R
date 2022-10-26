@@ -176,7 +176,7 @@ GGFP.mercator <- function(al) {
   if(!is.null(al$k)) {
     gm <- c(list(grid_mapping_name = "mercator"),
                       lonProjOrig_gm(al),
-                      scaleFactor_gm(al),
+                      scaleFactorProjOrig_gm(al),
                       falseEastNorth_gm(al),
                       getGeoDatum_gm(al))
   } else {
@@ -194,7 +194,7 @@ GGFP.oblique_mercator <- function(al) {
   gm <- c(list(grid_mapping_name = "oblique_mercator"),
                     latProjOrig_gm(al),
                     lonProjCent_gm(al),
-                    scaleFactor_gm(al),
+                    scaleFactorProjOrig_gm(al),
                     oMerc_gm(al),
                     falseEastNorth_gm(al),
                     getGeoDatum_gm(al))
@@ -215,7 +215,7 @@ GGFP.orthographic <- function(al) {
 #     gm <- c(list(grid_mapping_name = "polar_stereographic"),
 #                       latProjOrig_gm(al),
 #                       stVertLon_gm(al),
-#                       scaleFactor_gm(al),
+#                       scaleFactorProjOrig_gm(al),
 #                       falseEastNorth_gm(al),
 #                       getGeoDatum_gm(al))
 #   } else {
@@ -241,7 +241,7 @@ GGFP.stereographic <- function(al) {
   gm <- c(list(grid_mapping_name = "stereographic"),
                     latProjOrig_gm(al),
                     lonProjOrig_gm(al),
-                    scaleFactor_gm(al),
+                    scaleFactorProjOrig_gm(al),
                     falseEastNorth_gm(al),
                     getGeoDatum_gm(al))
   gm
@@ -250,8 +250,8 @@ GGFP.stereographic <- function(al) {
 GGFP.transverse_mercator <- function(al) {
   gm <- c(list(grid_mapping_name = "transverse_mercator"),
                     latProjOrig_gm(al),
-                    lonProjOrig_gm(al),
-                    scaleFactor_gm(al),
+                    lonCentMer_gm(al),
+                    scaleFactorCentMer_gm(al),
                     falseEastNorth_gm(al),
                     getGeoDatum_gm(al))
   gm
@@ -321,7 +321,11 @@ getGeoDatum_gm <- function(al) {
   }
 }
 
-scaleFactor_gm <- function(al) {
+scaleFactorCentMer_gm <- function(al) {
+  list(scale_factor_at_central_meridian = as.numeric(al$k))
+}
+
+scaleFactorProjOrig_gm <- function(al) {
   list(scale_factor_at_projection_origin = as.numeric(al$k))
 }
 
@@ -346,7 +350,7 @@ check_args <- function (x)
 }
 
 prepCRS <- function(prj) {
-  if(class(prj) == "CRS") prj <- prj@projargs
+  if(inherits(prj,  "CRS")) prj <- prj@projargs
 
   if(!check_args(prj)[1][[1]]) {
  

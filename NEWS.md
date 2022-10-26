@@ -1,3 +1,14 @@
+# ncmeta 0.3.5
+
+* Removed LazyData, unused. 
+
+* Extra info now provided by RNetCDF was causing non-nested data frame problems,
+fixed by PR from @mjwoods in #44 and #45.
+
+* Changed default branch name to "main", so please check if you have a fork and submit PRs. 
+
+* Fix bug where Scalar variables were treated as an axis. Picked up in stars PR #399. 
+
 # ncmeta 0.3.0
 
 * Fix file path mangling introduced in #27. 

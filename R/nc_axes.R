@@ -39,7 +39,8 @@ nc_axes.NetCDF <- function(x, variables = NULL, ...) {
       nc_axis_var(x, variable)
     })
   )
-
+  ## if no dims, then it's not an axis see https://github.com/r-spatial/stars/pull/399
+ axes <- dplyr::filter(axes, .data$ndims > 0)
 #  axes$id <- seq_len(nrow(axes)) ## row_number wtf
 
   #dplyr::transmute(axes, axis = row_number(), variable = .data$name, dimension = .data$dimids)
@@ -50,7 +51,7 @@ nc_axes.NetCDF <- function(x, variables = NULL, ...) {
 ## note this is a bit weird, but we have to ensure
 ## we work relative to all axes, so use the hidden function nc_axis_var
 nc_axis_var <- function(x, i) {
-  out <- RNetCDF::var.inq.nc(x, i)
+  out <- RNetCDF::var.inq.nc(x, i)[c("name", "ndims", "dimids")]
   #dimids <- out$dimids
   
   out[sapply(out, is.null)] <- NA
