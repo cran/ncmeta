@@ -1,6 +1,6 @@
-87a3af7abf3edd84b075793a546909c2 *DESCRIPTION
+b8b386d4569d8c80b1b3c350259bce85 *DESCRIPTION
 8d42254a59eb87976829d74ed97da073 *NAMESPACE
-483a445e80758169d6a2049d31ab3926 *NEWS.md
+41ec92c84af07f44e857e69568508bfc *NEWS.md
 7202096630392c669cca71f5585518e2 *R/nc-gridmapping.R
 95808ce7524160eb0e7a0c59c3b489c0 *R/nc-prj.R
 8b1f76a3f6d5cb9b4f48095e5166d0d7 *R/nc_att.R
@@ -15,7 +15,7 @@ d4d32fe919ac0c3b3b2169253f201f24 *R/nc_dim.R
 cce6e55f8d38433af4e5d9fba0ca8258 *R/nc_sources.R
 8c65186e4c478c9a0608d99f9d8f3ef6 *R/nc_var.R
 6db823088f12f084a105701725ef5ce2 *R/nc_variable.R
-bfc0f4cf3ffdc9bfe3a1f86e88b334ee *R/ncmeta-package.r
+256fc1dcec5e6286bd349b503d6439b4 *R/ncmeta-package.r
 d476333edbf533e0c358c8510fbeb9a1 *R/tidync.R
 e83c51bf6b2b625df7d7bffce376e7dc *R/utils.R
 1e5dbcb7af6f55b471b2b4003b5388e7 *README.md
@@ -51,7 +51,7 @@ dbee5af8c23f638a14d0ec698c43d81c *man/nc_prj_to_gridmapping.Rd
 81a2ef307ae6881f922a538842511f8c *man/nc_sources.Rd
 0b748d0ad245c00d28c062649feb85fb *man/nc_var.Rd
 873a23c400185fed242abb4c77680565 *man/nc_vars.Rd
-4e95dd4cfbe08c6565fcbb6d062c4c9d *man/ncmeta.Rd
+c8db75c2948c26dc44ca76f091f8a355 *man/ncmeta-package.Rd
 9da368d8df7c7d2b884589556ff08f18 *tests/testthat.R
 cd19b0d576a125f5a15edaf755020aa0 *tests/testthat/test-attributes.R
 adf30e688975349de85d6b69fb9f7c8c *tests/testthat/test-coord.R
