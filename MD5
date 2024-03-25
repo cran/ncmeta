@@ -1,6 +1,6 @@
-b8b386d4569d8c80b1b3c350259bce85 *DESCRIPTION
-8d42254a59eb87976829d74ed97da073 *NAMESPACE
-41ec92c84af07f44e857e69568508bfc *NEWS.md
+a23ea381a7dab1d47a3ed1c745623464 *DESCRIPTION
+b8fc9be752a52906993a4ec2903ab08e *NAMESPACE
+f834c47f5565c0cf314975c15c8823bf *NEWS.md
 7202096630392c669cca71f5585518e2 *R/nc-gridmapping.R
 95808ce7524160eb0e7a0c59c3b489c0 *R/nc-prj.R
 8b1f76a3f6d5cb9b4f48095e5166d0d7 *R/nc_att.R
@@ -9,9 +9,10 @@ a3eac94834c709b542f69dfb0fd89d76 *R/nc_axis.R
 c2553fcd2a178fcc69cf45a9d92e3b2e *R/nc_coord.R
 d4d32fe919ac0c3b3b2169253f201f24 *R/nc_dim.R
 6d5a87799a5ed8c8bcb6c21c0b2f6d3e *R/nc_dimension.R
+8c344841c0fed7f4dddaa7c9039515b2 *R/nc_extended.R
 346849373367b88651b988eecd923cbe *R/nc_grid.R
 7fb5a711355999fde006284591f3595f *R/nc_inq_file.R
-38d74a29b2ffb5cc6ca0c540ac0b9728 *R/nc_meta.R
+351bc9a1cf43fbac3189b651cd48aaad *R/nc_meta.R
 cce6e55f8d38433af4e5d9fba0ca8258 *R/nc_sources.R
 8c65186e4c478c9a0608d99f9d8f3ef6 *R/nc_var.R
 6db823088f12f084a105701725ef5ce2 *R/nc_variable.R
@@ -42,6 +43,7 @@ eed87286dc3b5be8903599784e1c3017 *man/nc_axis.Rd
 bea48d35a9f68b1fcc37f9fed52ecf6c *man/nc_coord_var.Rd
 f3d85457321112f8c90ac381a5227916 *man/nc_dim.Rd
 6dd3e0f2b8860d5dfd7555278327baf3 *man/nc_dims.Rd
+016af7e8f8d69136518e4a82d62ef6a7 *man/nc_extended.Rd
 33bba9f8770ef67fd85c118d4b507478 *man/nc_gm_to_prj.Rd
 03af798a4a747976c896aee1638cb033 *man/nc_grid_mapping_atts.Rd
 6cffd91e71fa4372668cd24f8f03ab5c *man/nc_grids.Rd
@@ -51,9 +53,9 @@ dbee5af8c23f638a14d0ec698c43d81c *man/nc_prj_to_gridmapping.Rd
 81a2ef307ae6881f922a538842511f8c *man/nc_sources.Rd
 0b748d0ad245c00d28c062649feb85fb *man/nc_var.Rd
 873a23c400185fed242abb4c77680565 *man/nc_vars.Rd
-c8db75c2948c26dc44ca76f091f8a355 *man/ncmeta-package.Rd
+d2500f07ff96dc32045d9de1de5ec5f0 *man/ncmeta-package.Rd
 9da368d8df7c7d2b884589556ff08f18 *tests/testthat.R
-cd19b0d576a125f5a15edaf755020aa0 *tests/testthat/test-attributes.R
+0f8d60be076b75a9385984729ca8b376 *tests/testthat/test-attributes.R
 adf30e688975349de85d6b69fb9f7c8c *tests/testthat/test-coord.R
 31f6e2b1e43b8fd3da38b0879c40c961 *tests/testthat/test-dimension.R
 27bb733bf578d47148a44d894116ecf0 *tests/testthat/test-file-bogatron.R

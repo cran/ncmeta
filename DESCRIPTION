@@ -1,6 +1,6 @@
 Package: ncmeta
 Title: Straightforward 'NetCDF' Metadata
-Version: 0.3.6
+Version: 0.4.0
 Authors@R: c(person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre")), 
              person("Tomas", "Remenyi", role = "ctb"), 
              person("Ben", "Raymond", role = "ctb"), 
@@ -15,14 +15,15 @@ Description: Extract metadata from 'NetCDF' data sources, these can be files, fi
 Depends: R (>= 3.3.0)
 License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.2.3
-Imports: dplyr, rlang, RNetCDF, tibble, stats, tidyr
+RoxygenNote: 7.3.0
+Imports: dplyr, rlang, RNetCDF, tibble, stats, tidyr, CFtime
 Suggests: testthat, covr
-URL: https://github.com/hypertidy/ncmeta
+URL: https://github.com/hypertidy/ncmeta,
+        https://hypertidy.github.io/ncmeta/
 BugReports: https://github.com/hypertidy/ncmeta/issues
 ByteCompile: TRUE
 NeedsCompilation: no
-Packaged: 2023-11-01 05:46:46 UTC; gdal
+Packaged: 2024-03-25 09:49:25 UTC; mdsumner
 Author: Michael Sumner [aut, cre],
   Tomas Remenyi [ctb],
   Ben Raymond [ctb],
@@ -30,4 +31,4 @@ Author: Michael Sumner [aut, cre],
   Milton Woods [ctb]
 Maintainer: Michael Sumner <mdsumner@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-11-01 06:20:02 UTC
+Date/Publication: 2024-03-25 10:20:02 UTC
